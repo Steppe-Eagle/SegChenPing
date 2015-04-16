@@ -1,0 +1,7 @@
+InputSequence=/nfs/bigeye/hieule/dataset/SegTrackv2/JPEGImages/worm/%05d.png
+Frames=243-243
+NumOfLayers=12
+MaxStCubeSize=100
+VizLayer=7-12
+VizFileName=/nfs/bigeye/hieule/output/swa/worm
+
