@@ -1,0 +1,27 @@
+
+
+addpath('./code');
+
+video_path = '../../../dataset/SegTrackv2/JPEGImages/birdfall';
+video_path = fullfile(pwd,'..','..','..','dataset','SegTrackv2','JPEGImages','birdfall');
+hie_path = fullfile(pwd,'..','..','..','output','gbh','birdfall');
+output_path = fullfile(pwd,'..','..','..','output','ues','gbh','birdfall','hie_no_20','sigma_10');
+runUES( video_path,hie_path,output_path,20)
+
+[stat2] = evaluation_segtrack_old('/home/hieule/Research/dataset/SegTrackv2/GroundTruth/birdfall','/home/hieule/Research/output/ues/gbh/birdfall/hie_no_20/sigma_10/select')
+
+
+video_name = 'girl';
+video_path = fullfile(pwd,'..','..','..','dataset','SegTrackv2','JPEGImages',video_name);
+hie_path = fullfile(pwd,'..','..','..','output','gbh',video_name);
+hie_no = 20;
+temp = ['hie_no_' , int2str(hie_no)];
+output_path = fullfile(pwd,'..','..','..','output','ues','gbh',video_name,temp,'sigma_10');
+mkdir(output_path)
+runUES( video_path,hie_path,output_path,20)
+
+
+video_path = '/home/hieule/Research/dataset/SegTrackv2/JPEGImages/birdfall';
+hie_path = '/home/hieule/Research/output/swa/birdfall';
+output_path = '/home/hieule/Research/output/ues/swa/birdfall';
+runUES( video_path,hie_path,output_path)

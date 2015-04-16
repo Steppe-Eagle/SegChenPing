@@ -1,0 +1,6 @@
+InputSequence=/home/hieule/Research/dataset/SegTrackv2/JPEGImages/frog/%10d.png
+Frames=1-10
+NumOfLayers=12
+MaxStCubeSize=100
+VizLayer=5-12
+VizFileName=./output_frog

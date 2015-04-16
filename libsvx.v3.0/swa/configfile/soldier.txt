@@ -1,0 +1,6 @@
+InputSequence=../../dataset/SegTrackv2/JPEGImages/soldier/%05d.png
+Frames=32-32
+NumOfLayers=12
+MaxStCubeSize=100
+VizLayer=7-12
+VizFileName=../../output/swa/soldier

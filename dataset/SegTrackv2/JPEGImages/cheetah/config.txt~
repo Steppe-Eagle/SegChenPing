@@ -1,0 +1,6 @@
+InputSequence=/home/hieule/Research/dataset/SegTrackv2/JPEGImages/cheetah/chasedeer_frame_%04d.bmp
+Frames=29-29
+NumOfLayers=12
+MaxStCubeSize=100
+VizLayer=5-12
+VizFileName=./output_cheetah

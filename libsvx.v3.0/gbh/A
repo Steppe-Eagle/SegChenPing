@@ -1,0 +1,2 @@
+/home/hieule/Research/dataset/SegTrackv2/JPEGImages/birdfall
+sudo ./gbh 5 200 100 0.5 20 /home/hieule/Research/dataset/SegTrackv2/PPMImages/birdfall ./output_gbh/birdfall

@@ -1,0 +1,6 @@
+InputSequence=../../dataset/SegTrackv2/JPEGImages/bird_of_paradise/%05d.png
+Frames=98-98
+NumOfLayers=12
+MaxStCubeSize=100
+VizLayer=7-12
+VizFileName=../../output/swa/bird_of_paradise

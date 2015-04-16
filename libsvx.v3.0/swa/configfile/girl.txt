@@ -1,0 +1,6 @@
+InputSequence=/home/hieule/Research/dataset/SegTrackv2/JPEGImages/girl/%05d.png
+Frames=21-21
+NumOfLayers=12
+MaxStCubeSize=100
+VizLayer=7-12
+VizFileName=/home/hieule/Research/output/swa/girl

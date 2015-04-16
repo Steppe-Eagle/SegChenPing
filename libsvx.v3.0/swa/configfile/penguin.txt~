@@ -1,0 +1,6 @@
+InputSequence=../../dataset/SegTrackv2/JPEGImages/penguin/%05d.png
+Frames=29-29
+NumOfLayers=12
+MaxStCubeSize=100
+VizLayer=7-12
+VizFileName=../../output/swa/penguin

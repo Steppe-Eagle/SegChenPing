@@ -1,0 +1,10 @@
+#!/bin/bash
+
+mkdir /home/hieule/Research/output/gbh/bird_of_paradise
+
+
+../gbh/gbh 5 500 200 0.5 20 /home/hieule/Research/dataset/SegTrackv2/PPMImages/bird_of_paradise /home/hieule/Research/output/gbh/bird_of_paradise
+
+
+
+

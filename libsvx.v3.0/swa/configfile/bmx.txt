@@ -1,0 +1,6 @@
+InputSequence=../../dataset/SegTrackv2/JPEGImages/bmx/%05d.png
+Frames=36-36
+NumOfLayers=12
+MaxStCubeSize=100
+VizLayer=7-12
+VizFileName=../../output/swa/bmx

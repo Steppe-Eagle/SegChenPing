@@ -1,0 +1,6 @@
+InputSequence=../../dataset/SegTrackv2/JPEGImages/monkeydog/%05d.png
+Frames=31-31
+NumOfLayers=12
+MaxStCubeSize=100
+VizLayer=7-12
+VizFileName=../../output/swa/monkeydog
