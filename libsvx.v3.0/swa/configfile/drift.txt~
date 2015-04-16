@@ -1,6 +1,7 @@
-InputSequence=../../dataset/SegTrackv2/JPEGImages/drift/%05d.png
-Frames=98-98
+InputSequence=/nfs/bigeye/hieule/dataset/SegTrackv2/JPEGImages/drift/%05d.png
+Frames=74-74
 NumOfLayers=12
 MaxStCubeSize=100
 VizLayer=7-12
-VizFileName=../../output/swa/drift
+VizFileName=/nfs/bigeye/hieule/output/swa/drift
+
