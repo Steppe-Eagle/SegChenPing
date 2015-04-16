@@ -9,6 +9,6 @@ parfor i= 1:size(video_name_array,1)
     hie_no = 10;
     temp = ['hie_no_' , int2str(hie_no)];
     output_path = ['/nfs/bigeye/hieule/output/SegTrackv2/ues/gbh/',video_name,'/',temp,'/sigma_10'];
-    %mkdir(output_path)
-   % runUES( video_path,hie_path,output_path,3)
+    mkdir(output_path)
+    runUES( video_path,hie_path,output_path,3)
 end
