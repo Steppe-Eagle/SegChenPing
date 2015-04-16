@@ -5,6 +5,8 @@ function ues(video_path, hie_path, output_path, hie_select_num, sigma, method, v
 
 settings; % load settings
 tic;
+
+
 if ~exist(output_path, 'dir')
     mkdir(output_path); % make output directory
 end
@@ -18,8 +20,10 @@ save(fullfile(output_path,'hierarchy.mat'), 'HIE', 'T');
 disp('---- Computing Entropy Field ...');
 switch method
     case 'motion'
+        t = toc;
         flow = compute_optflow(video_path, paths);
         save(fullfile(output_path,'flow.mat'), 'flow');
+        optical_flow_time = toc - t;
         if visflag == 1
             draw_video_flow(flow, output_path, paths);
         end
@@ -68,9 +72,10 @@ if exitflag <= 0
 else
     disp('    Converge to a solution!');
 end
-
+total_time = toc;
 %% Step 5: Save Results
 save(fullfile(output_path,'result.mat'), 'x');
+
 message = sprintf('    Total output supervoxel number: %d', sum(x));
 disp(message);
 if visflag == 1
@@ -79,4 +84,10 @@ if visflag == 1
     draw_result_entropy(x, HIE, T, E, output_path);
 end
 draw_images(x, HIE, T, output_path);
+
+
+fid = fopen( [output_path,'/time.txt'], 'wt' );
+  fprintf( fid, 'OPtical flow: %f\nTotal: %f\n', optical_flow_time,total_time);
+  fprintf(fid,'Total output supervoxel number: %d', sum(x));  
+fclose(fid);
 toc;

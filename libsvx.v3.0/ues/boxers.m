@@ -3,7 +3,7 @@
 video_path = fullfile(pwd,'examples','boxers','frames_png');
 hie_path = fullfile(pwd,'examples','boxers','hie'); 
 
-hie_select_num = 10; 
+hie_select_num = 3; 
 sigma = 1;
 visflag = 1;
 

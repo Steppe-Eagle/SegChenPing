@@ -4,7 +4,7 @@ function [ output_args ] = runUES( video_path,hie_path,output_path,hie_select_nu
 sigma = 10;
 
 % Visualization of middle steps: 0/1.
-visflag = 1;
+visflag = 0;
 
 
 % Feature Criteria: ('motion'|'objectness'|'detection'). See settings.m for

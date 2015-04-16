@@ -11,7 +11,7 @@ addpath(fullfile(root,'code'));
 % developed the algorithm.
 
 % ---- uncomment the next line in Ubuntu ----
-addpath('/opt/ibm/ILOG/CPLEX_Studio124/cplex/matlab');
+addpath('matlab');
 % ---- uncomment the next line in Mac OSX ----
 %addpath('~/Applications/IBM/ILOG/CPLEX_Studio124/cplex/matlab');
 
